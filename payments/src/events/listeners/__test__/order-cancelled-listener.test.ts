@@ -18,6 +18,8 @@ const setup = async () => {
         version: 0
     });
 
+    await order.save();
+
     // create a fake data event
     const data: IOrderCancelledEvent['data'] = {
         version: 1,

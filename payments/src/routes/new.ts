@@ -11,7 +11,7 @@ import { stripe } from '../stripe'
 const router = express.Router();
 
 
-router.post('/api/payment', requireAuthMiddleware, [
+router.post('/api/payments', requireAuthMiddleware, [
     body('token')
         .not()
         .isEmpty(),
